@@ -3,6 +3,12 @@ A clean and modern **Quiz Application UI** built using **HTML5 and CSS3**.
 This project focuses on designing a visually appealing and user-friendly quiz interface without using JavaScript.
 
 ---
+## 🌐 Live Demo
+
+Experience the project here:  
+👉 [Launch Quiz App](https://somasindhuja2002-max.github.io/quiz-app/)
+
+---
 
 ## ✨ Overview
 
