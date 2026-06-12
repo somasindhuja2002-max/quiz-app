@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    color: #fff;
+}
+/* MAIN WRAPPER */
+.quiz-wrapper{
+    width: 720px;
+}
+
+/* SCORE BOARD */
+.score-board{
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slide 1s ease;
+}
+.score-board h2{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* SCORE VALUE */
+.score{
+    font-size:22px;
+    font-weight: bold;
+}
+/* QUIZ CARD */
+.quiz{
+    background: rgba(255,255,255,0.12);
+    padding: 25px;
+    border-radius: 18px;
+    border: 2px solid rgba(255,255,255,0.4);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+/* QUESTION */
+.question{
+    margin-bottom: 22px;
+    padding:15px;
+    border-radius:12px;
+    border: 2px dashed rgba(255,255,255,0.4);
+    transition: 0.4s;
+}
+.question:hover{
+    transform: scale(1.02);
+}
+.question p{
+    font-size:18px;
+    margin-bottom: 12px;
+}
+/* OPTIONS */
+.options{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+input{
+    display: none;
+}
+/* LABEL */
+label{
+    padding:10px 15px;
+    background: rgba(0,0,0,0.35);
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+label:hover{
+    background: white;
+    color: black;
+    transform: translateX(8px);
+}
+/* CORRECT */
+.correct:checked+label{
+    background: #2ecc71;
+    color: black;
+    font-weight: bold;
+    pointer-events: none;
+    animation: correct 0.4s;
+}
+/* WRONG */
+.wrong:checked+label{
+    background: #e74c3c;
+    pointer-events: none;
+    animation: shake 0.3s;
+}
+/* LOCK OTEHR OPTION */
+input:checked ~ label{
+    pointer-events: none;
+    /* pointer-events: all;
+    pointer-events: fill;
+    pointer-events: painted;
+    pointer-events: stroke; */
+    /* pointer-events: visible; */
+    pointer-events: none;
+}
+/* ANIMATIONS */
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-4px);
+
+    }
+    50%{
+        transform: translateX(4px);
+
+    }
+    75%{
+        transform: translateX(-4px);
+
+    }
+    100%{
+        transform: translateX(0);
+
+    }
+}
+@keyframes correct{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}   
+@keyframes slide{
+    from{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to{
+    transform: translateY(0);opacity: 1;
+    }
+}
+
