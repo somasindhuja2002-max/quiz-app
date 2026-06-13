@@ -6,7 +6,7 @@ This project focuses on designing a visually appealing and user-friendly quiz in
 ## 🌐 Live Demo
 
 Experience the project here:  
-👉 [Launch Quiz App](https://somasindhuja2002-max.github.io/quiz-app/)
+👉 [Launch Quiz App](https://somasindhuja.github.io/quiz-app/)
 
 ---
 
