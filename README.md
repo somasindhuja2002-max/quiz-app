@@ -64,7 +64,7 @@ It demonstrates strong understanding of layout design, spacing, alignment, and r
 ## 👨‍💻 Author
 
 **Sindhuja Soma**  
-- GitHub: https://github.com/somasindhuja2002-max  
+- GitHub: https://github.com/somasindhuja 
 - Project: Quiz App UI Design
 
 ---
